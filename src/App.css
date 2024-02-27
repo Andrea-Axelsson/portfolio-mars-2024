@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+.navbar{
+  background-color: #434343;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 9.0625em;
+  max-width: 100%;
+}
+
+.navbar__ul{
+  display: flex;
+  flex-direction: row;
+  background-color: #434343;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.navbar__li{
+  list-style: none;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+.navbar__social-links{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.navbar__link img{
+  width: 35px;
+}
+
+/* START */
+
+.image-container {
+  width: 200px; /* Adjust based on your design */
+  height: 200px; /* Adjust based on your design */
+  background-image: url('./public/andrea-2024.jpeg');
+  background-size: cover; /* Or 'contain' based on preference */
+  background-position: center;
+  clip-path: url(#clipShape); /* Reference the clipPath ID */
+}
