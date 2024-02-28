@@ -4,9 +4,6 @@ const Navbar = () => {
         <nav className="navbar">
             <ul className="navbar__ul">
                 <li className="navbar__li">
-                    Start
-                </li>
-                <li className="navbar__li">
                     Techstack
                 </li>
                 <li className="navbar__li">

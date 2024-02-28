@@ -45,11 +45,55 @@
 
 /* START */
 
-.image-container {
-  width: 200px; /* Adjust based on your design */
-  height: 200px; /* Adjust based on your design */
-  background-image: url('./public/andrea-2024.jpeg');
-  background-size: cover; /* Or 'contain' based on preference */
+.image{
+  background-image: url("public/andrea-2024.jpeg");
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  border-radius: 10px;
   background-position: center;
-  clip-path: url(#clipShape); /* Reference the clipPath ID */
+
+}
+.start{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.start__text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5em;
+  gap: 10px;
+}
+
+
+
+.start__header{
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 300;
+  font-size: 2.1875rem;
+}
+
+.header{
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 2.1875rem;
+  color: #095447;
+}
+
+.start__header, .header, .sub-header{
+  margin-left: 1.25em;
+}
+
+.sub-header{
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 300;
+  font-size: 20px;
+  background-color: #16E0BD;
+  padding: 0.425em 1.25em;
+  border-radius: 5px;
+  display: inline;
 }
