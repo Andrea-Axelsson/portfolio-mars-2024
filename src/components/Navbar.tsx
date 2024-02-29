@@ -7,7 +7,7 @@ const Navbar = () => {
                     Techstack
                 </li>
                 <li className="navbar__li">
-                    About me
+                    About
                 </li>
                 <li className="navbar__li">
                     Projects
@@ -17,7 +17,7 @@ const Navbar = () => {
                 </li>
             </ul>
 
-            <section className="navbar__social-links">
+            {/* <section className="navbar__social-links">
                 <a className="navbar__link" href="/html/">
                     <img src="./public/github.svg" alt="Github Logo"/>
                 </a>
@@ -25,7 +25,7 @@ const Navbar = () => {
                     <img src="./public/linkedin.svg" alt="Linkedin Logo"/>
                 </a>
                 
-            </section>
+            </section> */}
         </nav>
     </>
     
