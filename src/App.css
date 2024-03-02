@@ -280,39 +280,27 @@
  .project__image{
   max-width: 600px;
   height: 284px;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)), url("/portfolio.png");
+  background-image: url("/portfolio.png");
   border: 3px solid #fff;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
  }
 
 
  .project__skill-tag-group{
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 20px;
   padding: 10px;
   flex-wrap: wrap;
  }
 
- .project__skill-tag{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 46px;
-  height: 31px;
-  background-color: black;
-  border-radius: 10px;
-  opacity: 0.8;
- }
-
  .project__skill-logo{
-  width: 20px;
+  width: 30px;
  }
 
  .project__buttons{
