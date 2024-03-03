@@ -16,16 +16,6 @@ const Navbar = () => {
                     Contact
                 </li>
             </ul>
-
-            {/* <section className="navbar__social-links">
-                <a className="navbar__link" href="/html/">
-                    <img src="./public/github.svg" alt="Github Logo"/>
-                </a>
-                <a className="navbar__link" href="/html/">
-                    <img src="./public/linkedin.svg" alt="Linkedin Logo"/>
-                </a>
-                
-            </section> */}
         </nav>
     </>
     
