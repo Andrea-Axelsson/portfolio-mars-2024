@@ -5,15 +5,39 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ProjectData from "./data/ProjectData"
+import PortfolioProject from './components/PortfolioProject'
+
+
+
 
 const App = () => {
+
+const portfolioProject = ProjectData.map(project => {
+  return (
+    <PortfolioProject
+    key={project.id}
+    id={project.id}
+    projectTitle={project.projectTitle}
+    projectImage={project.projectImage}
+    tags={project.tags}
+    bodyText={project.bodyText}
+    website={project.website}
+    github={project.github}
+    />
+  )
+})
+
+
   return (
     <>
       <Navbar/>
       <Start/>
       <Techstack/>
       <About/>
-      <Projects/>
+      <Projects
+      portfolioProject={portfolioProject}
+      />
       <Contact/>
       <Footer/>
     </>

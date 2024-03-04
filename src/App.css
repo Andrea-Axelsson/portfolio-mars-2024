@@ -293,6 +293,7 @@ text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
   margin: 10px 10%;
   gap: 80px;
  }
@@ -309,7 +310,6 @@ text-align: center;
  .project__image{
   max-width: 600px;
   height: 284px;
-  background-image: url("/portfolio.png");
   border: 3px solid #fff;
   border-radius: 10px;
   display: flex;
