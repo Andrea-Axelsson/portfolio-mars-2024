@@ -1,13 +1,13 @@
-import {ProjectProps} from '../components/Interface'
+import HorizontalScrollCarousel from './HorizontalScrollCarousel'
 
 
-const Projects = ({portfolioProject}: ProjectProps) => {
+const Projects = () => {
   return (
 
     <section className="projects-background">
     <h1 className="header header--light">Projects</h1>
     <section className="projects-container">
-        {portfolioProject}
+        <HorizontalScrollCarousel/>
     </section>
     </section>
   )

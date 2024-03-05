@@ -115,6 +115,7 @@ text-align: center;
     height: 54px;
     border-radius: 50px;
     border: 2px #fff solid;
+    text-decoration: none;
   }
 
   .button-tag-info{
@@ -282,10 +283,33 @@ text-align: center;
   margin-right: 20px;
 }
 
+/* HORIZONTAL SCROLL */
+
+.horizontal-scroll-container{
+  position: relative;
+  height: 300vh;
+}
+
+.horizontal-scroll-div{
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.horizontal-scroll-motion-div{
+  display: flex;
+  gap: 5rem;
+}
+
  /*PROJECTS*/
 
  .projects-background{
   background-color: #434343;
+/*   height: 300vh; */
+  /* position: relative; */
   
  }
 
@@ -294,8 +318,10 @@ text-align: center;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  top: 0;
   margin: 10px 10%;
   gap: 80px;
+/*   position: sticky; */
  }
 
  .project{
@@ -303,7 +329,6 @@ text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
   padding-bottom: 80px;
  }
 
@@ -390,6 +415,11 @@ text-align: center;
     .about__body-text--black{
       padding-top: 20px;
       text-align: left;
+    }
+
+    .horizontal-scroll-container{
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
     }
   }
 

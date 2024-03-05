@@ -5,15 +5,12 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import ProjectData from "./data/ProjectData"
-import PortfolioProject from './components/PortfolioProject'
-
 
 
 
 const App = () => {
 
-const portfolioProject = ProjectData.map(project => {
+/* const portfolioProject = ProjectData.map(project => {
   return (
     <PortfolioProject
     key={project.id}
@@ -26,7 +23,7 @@ const portfolioProject = ProjectData.map(project => {
     github={project.github}
     />
   )
-})
+}) */
 
 
   return (
@@ -35,9 +32,7 @@ const portfolioProject = ProjectData.map(project => {
       <Start/>
       <Techstack/>
       <About/>
-      <Projects
-      portfolioProject={portfolioProject}
-      />
+      <Projects/>
       <Contact/>
       <Footer/>
     </>
