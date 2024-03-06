@@ -302,14 +302,13 @@ text-align: center;
 .horizontal-scroll-motion-div{
   display: flex;
   gap: 5rem;
+  align-items:start;
 }
 
  /*PROJECTS*/
 
  .projects-background{
   background-color: #434343;
-/*   height: 300vh; */
-  /* position: relative; */
   
  }
 
@@ -317,11 +316,9 @@ text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
   top: 0;
   margin: 10px 10%;
   gap: 80px;
-/*   position: sticky; */
  }
 
  .project{
@@ -334,7 +331,7 @@ text-align: center;
 
  .project__image{
   max-width: 600px;
-  height: 284px;
+  height: 250px;
   border: 3px solid #fff;
   border-radius: 10px;
   display: flex;
@@ -342,6 +339,7 @@ text-align: center;
   justify-content: flex-end;
   align-items: flex-start;
   margin: 20px 0 10px 0;
+  object-fit: cover;
  }
 
 
@@ -369,18 +367,29 @@ text-align: center;
 
   /* MEDIA QUERIES */
 
-  @media (max-width: 1000px){
+  @media (max-width: 1080px){
     .projects-container{
       gap: 10px;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
      }
+
+     .horizontal-scroll-container{
+      overflow-x: scroll;
+      overflow-y: hidden;
+      touch-action: pan-x;
+      height: auto;
+    }
+
+    .horizontal-scroll-div{
+      height: auto;
+    }
+
   }
 
-  @media (max-width: 800px){
+  @media (max-width: 810px){
     .about{
-     
       text-align: center;
       max-width: 1000px;
       grid-template-areas:
@@ -419,7 +428,13 @@ text-align: center;
 
     .horizontal-scroll-container{
       overflow-x: scroll;
-      -webkit-overflow-scrolling: touch;
+      overflow-y: hidden;
+      touch-action: pan-x;
+      height: auto;
+    }
+
+    .horizontal-scroll-div{
+      height: auto;
     }
   }
 
@@ -454,8 +469,26 @@ text-align: center;
       }
 
       .button-tag{
-        width: 150px;
+        width: 100px;
       }
+
+      .project, .project__image {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .horizontal-scroll-container{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        touch-action: pan-x;
+        height: 100vh;
+      }
+
+      .horizontal-scroll-div{
+        height: 100vh;
+      }
+
+      
   }
 
   

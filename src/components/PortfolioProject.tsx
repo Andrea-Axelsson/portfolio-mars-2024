@@ -1,7 +1,7 @@
 import React from 'react'
 import {Project} from '../components/Interface'
 
-const PortfolioProject: React.FC<Project> = ({ id, projectTitle, projectImage, tags, bodyText, website, github }) => {
+const PortfolioProject: React.FC<Project> = ({projectTitle, projectImage, tags, bodyText, website, github }) => {
 
     const tagElements = Object.values(tags).map((tag, index)=> (
         <img className="project__skill-logo" src={tag} key={index} alt="Tech logo"/> 
