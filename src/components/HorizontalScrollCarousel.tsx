@@ -16,7 +16,7 @@ const HorizontalScrollCarousel = () => {
     const isMobileVertical = window.innerWidth <= 600;
     const isPadVertical = window.innerWidth <= 810;
     const isPadHorizontal = window.innerWidth <= 1080;
-    const x = useTransform(scrollYProgress, [0, 1], isMobileVertical ? ["45%", "45%"] : isPadVertical? ["43%", "43%"] : isPadHorizontal ? ["40%", "40%"] :  ["0%", "-70%"]);
+    const x = useTransform(scrollYProgress, [0, 1], isMobileVertical ? ["44%", "44%"] : isPadVertical? ["43%", "43%"] : isPadHorizontal ? ["40%", "40%"] :  ["0%", "-70%"]);
 
   
     return (
