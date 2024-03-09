@@ -527,7 +527,6 @@ text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 80px;
  }
 
  .project__image{
@@ -660,6 +659,18 @@ text-align: center;
         margin-bottom: 1em;
       }
 
+      .techstack__tag-group{
+        max-width: 600px;
+        gap: 10px;
+      }
+
+
+      .techstack__tag-group .body-text{
+        font-family: "JetBrains Mono", monospace;
+          font-weight: 300;
+          font-size: 14px;
+      }
+
       .body-text{
         font-family: "JetBrains Mono", monospace;
           font-weight: 300;
@@ -670,7 +681,7 @@ text-align: center;
       }
 
       .button-tag{
-        width: 100px;
+        width: 130px;
       }
 
       .project, .project__image {
