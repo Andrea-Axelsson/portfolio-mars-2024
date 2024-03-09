@@ -70,7 +70,7 @@ const Techstack = () => {
       </article>
       <article className="button-tag">
         <article className="button-tag-info">
-          <img className="button-tag-icon" src="firebase.svg" alt="Firebase logo"/> 
+          <img className="button-tag-icon" src="sql.png" alt="Firebase logo"/> 
           <p className="body-text body-text--white">Databases</p>
         </article>
       </article>

@@ -34,14 +34,15 @@ const About = () => {
     <section className="about" ref={ref}>
         
         <h2 className="about__sub-header">Front end developer in Gothenburg</h2>
-        <p className="body-text about__body-text-grid body-text--black">Lorem ipsum dolor sit amet consectetur. Metus turpis pellentesque volutpat odio aliquam. Tortor ultrices facilisi ac in scelerisque. Tortor elit tincidunt lacus ultrices dictumst. Cursus odio euismod volutpat quam fusce nisi enim. Pretium nunc nullam nibh sit quisque pellentesque. 
-        Placerat erat pellentesque lacus sollicitudin enim potenti gravida aliquet. Amet amet ut id  
-        <br></br>
-        <br></br>
-        Metus turpis pellentesque volutpat odio aliquam. Tortor ultrices facilisi ac in scelerisque. Tortor elit tincidunt lacus ultrices dictumst. Cursus odio euismod volutpat quam fusce nisi enim. Pretium nunc nullam nibh sit quisque pellentesque. 
-        Placerat erat pellentesque lacus sollicitudin enim potenti gravida aliquet. Amet amet ut id
+        <p className="body-text about__body-text-grid body-text--black">Hi, glad you found my little corner of the internet!
+
+My name is Andrea, studying to be a Front end developer and graduating in 2025.
+
+I have always been eager to learn new things and call myself an 'online course junkie.' I love to constantly develop my skills and always have an online course that I immerse myself in when I have some spare time. That's one of the things I love most about programming - there's always something new to learn and explore.
+
+When I'm not coding or exploring new web technologies, you can find me engrossed in some Ricky Gervais series, snuggling with the dog, or enjoying a winter bath, provided there is a sauna nearby.
         </p>
-        <img src="/andrea-2024.jpeg" alt="A picture of Andrea" className="about__image"/>
+        <img src="/andrea-dog.jpg" alt="A picture of Andrea" className="about__image"/>
     </section>
     </section>
     
