@@ -44,6 +44,11 @@ text-align: center;
   color: #fff;
 }
 
+.navbar__li:hover{
+  color: #16E0BD;
+  cursor: pointer;
+}
+
 .navbar__social-links{
   display: flex;
   flex-direction: row;
@@ -52,6 +57,11 @@ text-align: center;
 
 .footer__link img{
   width: 35px;
+  
+}
+
+.footer__link img:hover{
+  filter: invert(2%) sepia(31%) saturate(6308%) hue-rotate(88deg) brightness(95%) contrast(83%);
 }
 
 /* START */
@@ -176,6 +186,12 @@ text-align: center;
   .in-view-techstack > *:nth-child(8) {
     animation-delay: 0.7s;
   }
+  .in-view-techstack > *:nth-child(9) {
+    animation-delay: 0.8s;
+  }
+  .in-view-techstack > *:nth-child(10) {
+    animation-delay: 0.9s;
+  }
 
   @keyframes slideInY {
     to {
@@ -258,6 +274,18 @@ text-align: center;
     align-items: center;
     gap: 10px;
   }
+
+  .project .button-tag:hover{
+    border: 2px #16E0BD solid;
+  }  
+
+  .project .button-tag:hover .button-tag-info p{
+  color:#16E0BD
+  }  
+
+  .project .button-tag:hover .button-tag-icon{
+    filter: invert(2%) sepia(31%) saturate(6308%) hue-rotate(88deg) brightness(95%) contrast(83%)
+    } 
 
   .button-tag-icon{
     width: 30px;
@@ -416,6 +444,7 @@ text-align: center;
   margin-right: 20px;
 }
 
+
 /* HORIZONTAL SCROLL */
 
 .horizontal-scroll-container{
@@ -445,14 +474,34 @@ text-align: center;
   
  }
 
+
+
+
+ .projects__header-arrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ }
+
  .fa-arrow-right{
   font-size: 30px;
   color: #fff;
-  padding-right: 10%;
-  padding-top: 40px;
-  animation: slide 2s ease-in-out infinite
+  animation: slide 2s ease-in-out infinite;
  }
 
+ .scroll-arrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10%;
+  padding-top: 40px;
+  gap: 10px;
+ }
+
+
+ 
  @keyframes slide{
   0%, 100%{
     transform: translateX(0)
@@ -460,13 +509,6 @@ text-align: center;
   50%{
     transform: translateX(30px)
   }
- }
-
- .projects__header-arrow{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
  }
 
  .projects-container{

@@ -8,7 +8,11 @@ const Projects = () => {
     
     <article className='projects__header-arrow'>
       <h1 className="header header--light">Projects</h1>
-      <i className="fa-solid fa-arrow-right"></i>
+      <div className='scroll-arrow'>
+        <p className='body-text body-text--white'>scroll</p>
+        <i className="fa-solid fa-arrow-right"></i>
+      </div>
+      
     </article>
     
     <section className="projects-container">
