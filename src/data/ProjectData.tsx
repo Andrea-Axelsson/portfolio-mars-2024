@@ -1,8 +1,25 @@
 import {Project} from '../components/Interface'
 
 const ProjectData: Project[] = [
+
     {
         id: 1,
+        projectTitle: "Professional Portfolio",
+        projectImage: "portfolio-2024.png",
+        tags: {
+            tag1: "html.svg",
+            tag2: "css.svg",
+            tag3: "typescript.svg",
+            tag4: "react.svg",
+            tag5: "ux-ui.png",
+        },
+        bodyText: "My portfolio: a dive into creative web development with TypeScript, featuring unique designs and interactive animations for a dynamic experience.",
+        website: "https://andrea-portfolio-2024.netlify.app/",
+        github: "https://github.com/Andrea-Axelsson/portfolio-mars-2024",
+    },
+
+    {
+        id: 2,
         projectTitle: "VayCay Generator",
         projectImage: "VayCay.png",
         tags: {
@@ -12,13 +29,13 @@ const ProjectData: Project[] = [
             tag4: "ux-ui.png",
             tag5: "api.png",
         },
-        bodyText: "This is my very first passion project, a result of my time and learning at Scrimbas Front End Developer Bootcamp. <br><br>",
+        bodyText: "This is my very first passion project. I created a travel tool that simplifies finding destinations and activities based on user preferences.",
         website: "https://vay-cay-generator.netlify.app/",
         github: "https://github.com/Andrea-Axelsson/vay-cay-generator"
     },
     {
-        id: 2,
-        projectTitle: "Portfolio",
+        id: 3,
+        projectTitle: "Creative Portfolio",
         projectImage: "portfolio.png",
         tags: {
             tag1: "html.svg",
@@ -28,12 +45,12 @@ const ProjectData: Project[] = [
             tag5: "react.svg",
         },
         
-        bodyText: "This project is my biggest passion project to date. I'm actually more happy and excited about my portfolio than the actual projects in my portfolio.",
+        bodyText: "Another passion project! I developed a portfolio focusing on reusable code and UI design, resulting in a nostalgic, colorful Y2K desktop style, emphasizing responsiveness.",
         website: "https://andrea-axelsson-portfolio.netlify.app/",
         github: "https://github.com/Andrea-Axelsson/Portfolio"
     },
     {
-        id: 3,
+        id: 4,
         projectTitle: "Quizzical",
         projectImage: "quizzical.png",
         tags: {
@@ -44,27 +61,12 @@ const ProjectData: Project[] = [
             tag5: "react.svg",
         },
     
-        bodyText: "This is the solution to the solo project 'Quizzical' in the Scrimbas React course. <br><br> The project 'Quizzical' was an amazing journey and a significant challenge in my",
+        bodyText: "This is the solution to the solo project 'Quizzical' in the Scrimbas React course. Advancing from vanilla JS to mastering React by integrating APIs and managing states.",
 
         website: "https://quizzical-scrimba-quiz-game.netlify.app/",
         github: "https://github.com/Andrea-Axelsson/quizzical"
     },
-    {
-        id: 4,
-        projectTitle: "Avatar Card Game",
-        projectImage: "avatar-card-game.png",
-        tags: {
-            tag1: "html.svg",
-            tag2: "css.svg",
-            tag3: "javascript.svg",
-            tag4: "ux-ui.png",
-
-        },
     
-        bodyText: "In this project, I got the chance to really geek out in 'Avatar: The Last Airbender' by creating an interactive role-playing game.<br><br> It was my first introduction to JavaScript",
-        website: "https://avatar-card-game.netlify.app/",
-        github: "https://github.com/Andrea-Axelsson/avatar-card-game"
-    },
     {
         id: 5,
         projectTitle: "Movie Watchlist",
@@ -76,7 +78,7 @@ const ProjectData: Project[] = [
             tag4: "api.png",
         },
         
-        bodyText: "In the 'Movie-Watchlist' project, I embarked on a challenging journey to master API integration.<br><br> Navigating through the complexities of retrieving the right data from the",
+        bodyText: "Embarked on honing API integration in 'Movie-Watchlist' project, enhancing skills through deep dive into API documentation.",
 
         website: "https://movie-watchlist-scrimba-project.netlify.app/index.html",
         github: "https://github.com/Andrea-Axelsson/movie-watchlist"
@@ -92,24 +94,28 @@ const ProjectData: Project[] = [
             tag4: "api.png",
         },
 
-        bodyText: "'Color Generator' is a web application developed to create dynamic color schemes.<br><br> It uses pure JavaScript for its core functionality, including a challenging feature",
+        bodyText: "Developed 'Color Generator' web app with JavaScript, featuring clipboard hex code copying to clipboard and dynamic schemes from TheColorAPI.",
         website: "https://color-generator-scrimba.netlify.app/",
         github: "https://github.com/Andrea-Axelsson/color-generator"
     },
+
     {
         id: 7,
-        projectTitle: "Oldagram",
-        projectImage: "oldagram.png",
+        projectTitle: "Avatar Card Game",
+        projectImage: "avatar-card-game.png",
         tags: {
             tag1: "html.svg",
             tag2: "css.svg",
             tag3: "javascript.svg",
+            tag4: "ux-ui.png",
+
         },
-        
-        bodyText: "This was one of the projects I found to be the most fun at the beginning of my programming journey.<br><br> The concept of an Instagram copy, albeit only with historicala",
-        website: "https://oldagram-scrimba.netlify.app/",
-        github: "https://github.com/Andrea-Axelsson/Oldagram"
+    
+        bodyText: "In this project, I got the chance to really geek out in 'Avatar: The Last Airbender' with tailored health and dice for each character, ensuring balanced and diverse gameplay outcomes.",
+        website: "https://avatar-card-game.netlify.app/",
+        github: "https://github.com/Andrea-Axelsson/avatar-card-game"
     },
+    
 
 ]
 

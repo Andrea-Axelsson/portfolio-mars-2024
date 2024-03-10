@@ -21,13 +21,13 @@ const PortfolioProject: React.FC<Project> = ({projectTitle, projectImage, tags, 
                 {bodyText}
                 </p>
                 <section className="project__buttons">
-                    <a className="button-tag" href={github}>
+                    <a className="button-tag" href={github} target="_blank">
                             <article className="button-tag-info" >
                                 <img className="button-tag-icon" src="/github.svg" alt="Github icon"/> 
                                 <p className="body-text body-text--white">Code</p>
                             </article>
                     </a>
-                        <a className="button-tag" href={website}>
+                        <a className="button-tag" href={website} target="_blank">
                             <article className="button-tag-info">
                                 <img className="button-tag-icon" src="/link.png" alt="Link icon"/> 
                                 <p className="body-text body-text--white">Live</p>
