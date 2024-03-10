@@ -1,3 +1,4 @@
+// Imports the Link component from react-scroll for smooth scrolling functionality
 import { Link } from "react-scroll"
 
 const Navbar = () => {
@@ -5,6 +6,7 @@ const Navbar = () => {
     <>
         <nav className="navbar">
             <ul className="navbar__ul">
+                {/*Link components from react-scroll to enable smooth scrolling to sections. Each link targets a section by its id. */}
                 <Link activeClass="active" smooth spy to="techstack">
                     <li className="navbar__li">
                         Techstack

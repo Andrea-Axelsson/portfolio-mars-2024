@@ -1,3 +1,5 @@
+
+// Imports the HorizontalScrollCarousel component, which is responsible for displaying the projects in a horizontally scrolling format.
 import HorizontalScrollCarousel from './HorizontalScrollCarousel'
 
 
@@ -14,9 +16,9 @@ const Projects = () => {
       </div>
       
     </article>
-    
+    {/* Section container for the HorizontalScrollCarousel component */}
     <section className="projects-container">
-        <HorizontalScrollCarousel/>
+        <HorizontalScrollCarousel/> {/* Renders the horizontal scroll carousel with project details */}
     </section>
     </section>
   )

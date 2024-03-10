@@ -1,33 +1,13 @@
-import {useRef, useEffect} from "react"
+// Import the scrollAnimation hook for animating elements on scroll
+import scrollAnimation from "./ScrollAnimation";
 
 const About = () => {
 
-  const ref = useRef(null)
+   // Calls the scrollAnimation hook and assigns its return value to ref
+  // This ref will be used to apply animations to the component on scroll events
+  const ref = scrollAnimation()
 
-  useEffect(() => {
-    if (ref.current) {
-      const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('in-view');
-            } else {
-              entry.target.classList.remove('in-view');
-            }
-            console.log('entryyy', entry)
-            console.log('Target', entry.target);
-            console.log('Is intersecting', entry.isIntersecting);
-          });
-        },
-      );
-
-      observer.observe(ref.current);
-
-      return () => {
-        observer.disconnect();
-      };
-    }
-  }, [ref]);
-
+ // The component renders an about section with personal and professional information
   return (
     <section id="about">
     <h2 className="header header--dark about__header--grid">About me</h2>

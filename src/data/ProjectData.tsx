@@ -1,5 +1,7 @@
+// Imports the Project interface for type checking
 import {Project} from '../components/Interface'
 
+// Defines an array of projects, each object following the Project interface structure
 const ProjectData: Project[] = [
 
     {

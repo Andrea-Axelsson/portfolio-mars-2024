@@ -1,8 +1,12 @@
+// Imports the React library for creating the component
 import React from 'react'
+// Imports the Project interface for TypeScript type checking
 import {Project} from '../components/Interface'
 
+// Defines the PortfolioProject component with props conforming to the Project interface
 const PortfolioProject: React.FC<Project> = ({projectTitle, projectImage, tags, bodyText, website, github }) => {
 
+    // Creates tag elements from the tags object. Each tag is represented by an image.
     const tagElements = Object.values(tags).map((tag, index)=> (
         <img className="project__skill-logo" src={tag} key={index} alt="Tech logo"/> 
     ))
@@ -15,7 +19,7 @@ const PortfolioProject: React.FC<Project> = ({projectTitle, projectImage, tags, 
                 <img className="project__image" src={projectImage} alt="Project Image"/> 
                 </article>
                         <section className="project__skill-tag-group">
-                            {tagElements}
+                            {tagElements} {/* Renders the tag images */}
                         </section>
                 <p className="body-text body-text--white">
                 {bodyText}

@@ -1,31 +1,12 @@
 
-import {useRef, useEffect} from "react"
+// Imports the custom hook scrollAnimation from the relative path "./ScrollAnimation"
+import scrollAnimation from "./ScrollAnimation"
 
+// Defines the Techstack component
 const Techstack = () => {
-
-
-  const ref = useRef(null)
-
-  useEffect(() => {
-    if (ref.current){
-      const observer = new IntersectionObserver((entries)=> {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting){
-            entry.target.classList.add('in-view-techstack')
-          }else{
-            entry.target.classList.remove('in-view-techstack')
-          }
-        })
-      })
-
-      observer.observe(ref.current)
-      
-      return () => {
-        observer.disconnect()
-      }
-
-    }
-  }, [ref])
+  // Calls the scrollAnimation hook to get a ref object.
+  // This ref should be attached to the element we want to animate on scroll.
+  const ref = scrollAnimation()
 
   return (
     <section className="techstack" id="techstack">
@@ -94,8 +75,6 @@ const Techstack = () => {
       </article>
 
       </section>
-
-      
     </section>
   )
 }

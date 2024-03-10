@@ -17,10 +17,6 @@
   padding: 20px;
 }
 
-.navbar{
-  position: sticky;
-}
-
 .footer{
 gap: 20px;
 flex-wrap: wrap;
@@ -94,140 +90,6 @@ text-align: center;
     object-fit: cover;
   }
 
- /* START ANIM */
-
-  .start > * {
-    opacity: 0;
-    transform: translateX(-100px);
-    animation: slideIn 1s forwards;
-  }
-
-  .start > :nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  .start >:nth-child(3) {
-    animation-delay: 0.4s;
-  }
-
-  .start > *:nth-child(4) {
-    animation-delay: 0.6s;
-  }
-
-  @keyframes slideIn {
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-   /* ABOUT ANIM */
-  
-  .about > * {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  .in-view > *{
-    animation: slideIn 1s forwards;
-  }
-
-  .in-view > :nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  .in-view >:nth-child(3) {
-    animation-delay: 0.4s;
-  }
-
-  .in-view > *:nth-child(4) {
-    animation-delay: 0.6s;
-  }
-
-  @keyframes slideIn {
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  /* TECHSTACK ANIM */
-
-  .techstack__tag-group > * {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-
-  .in-view-techstack > *{
-    animation: slideInY 1s forwards;
-  }
-
-  .in-view-techstack > :nth-child(2) {
-    animation-delay: 0.1s;
-  }
-
-  .in-view-techstack >:nth-child(3) {
-    animation-delay: 0.2s;
-  }
-
-  .in-view-techstack > *:nth-child(4) {
-    animation-delay: 0.3s;
-  }
-  .in-view-techstack > *:nth-child(5) {
-    animation-delay: 0.4s;
-  }
-  .in-view-techstack > *:nth-child(6) {
-    animation-delay: 0.5s;
-  }
-  .in-view-techstack > *:nth-child(7) {
-    animation-delay: 0.6s;
-  }
-  .in-view-techstack > *:nth-child(8) {
-    animation-delay: 0.7s;
-  }
-  .in-view-techstack > *:nth-child(9) {
-    animation-delay: 0.8s;
-  }
-  .in-view-techstack > *:nth-child(10) {
-    animation-delay: 0.9s;
-  }
-
-  @keyframes slideInY {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* CONTACT ANIM */
-
-  .contact-info > * {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-
-  .in-view > *{
-    animation: slideInY 1s forwards;
-  }
-
-  .in-view > :nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  .in-view >:nth-child(3) {
-    animation-delay: 0.4s;
-  }
-
-  .in-view > *:nth-child(4) {
-    animation-delay: 0.6s;
-  }
-
-  @keyframes slideInY {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 
   /* TECHSTACK */
 
@@ -387,7 +249,7 @@ text-align: center;
     grid-area: about-subtitle;
     grid-row: 2;
     text-align: left;
-    width: calc(100% + 15.8em);
+    width: calc(100% + 18em);
   }
 
   .about__header--grid,
@@ -473,9 +335,6 @@ text-align: center;
   
  }
 
-
-
-
  .projects__header-arrow{
   display: flex;
   flex-direction: row;
@@ -519,8 +378,6 @@ text-align: center;
   gap: 80px;
  }
 
- 
-
  .project{
   max-width: 600px;
   display: flex;
@@ -563,6 +420,101 @@ text-align: center;
   margin: 20px 0;
 
  }
+
+ /* ANIMATIONS */
+
+ /* START ANIM */
+
+ .start > * {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideInX 1s forwards;
+}
+
+.start > :nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.start >:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.start > *:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+
+ /* OTHER ANIM */
+
+.about > * {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.techstack__tag-group > * {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.contact-info > * {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.in-view > *{
+  animation: slideInX 1s forwards;
+}
+
+.in-view> *{
+  animation: slideInY 1s forwards;
+}
+
+@keyframes slideInX {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInY {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* STAGGERING EFFECT ANIMATION*/
+
+.in-view> :nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.in-view>:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.in-view> *:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.in-view> *:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.in-view> *:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.in-view> *:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.in-view> *:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.in-view> *:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.in-view> *:nth-child(10) {
+  animation-delay: 0.9s;
+}
 
   /* MEDIA QUERIES */
 

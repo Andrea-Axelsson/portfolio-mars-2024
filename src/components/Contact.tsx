@@ -1,31 +1,14 @@
-import {useRef, useEffect} from "react"
+// Import the scrollAnimation custom hook for adding scroll animations to components
+import scrollAnimation from "./ScrollAnimation"
 
 const Contact = () => {
 
-  const ref = useRef(null)
+  
+  // Initialize the scroll animation for this component
+  // The ref returned by scrollAnimation will be used to apply animations on scroll
+  const ref = scrollAnimation()
 
-  useEffect(() => {
-
-    if (ref.current){
-      const observer = new IntersectionObserver ((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting){
-            entry.target.classList.add('in-view')
-          }else{
-            entry.target.classList.remove('in-view')
-          }
-        })
-      })
-
-      observer.observe(ref.current)
-
-      return () => {
-        observer.disconnect()
-      }
-    }
-
-  }, [ref])
-
+// Renders the contact section of the website
   return (
     <section id="contact" className="contact">
         <h2 className="header header--dark about__header--grid">Contact</h2>
