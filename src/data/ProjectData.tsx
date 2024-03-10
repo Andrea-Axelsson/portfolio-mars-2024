@@ -80,7 +80,7 @@ const ProjectData: Project[] = [
             tag4: "api.png",
         },
         
-        bodyText: "Embarked on honing API integration in 'Movie-Watchlist' project, enhancing skills through deep dive into API documentation.",
+        bodyText: "I embarked on honing API integration in the 'Movie-Watchlist' project, enhancing skills through deep dive into API documentation.",
 
         website: "https://movie-watchlist-scrimba-project.netlify.app/index.html",
         github: "https://github.com/Andrea-Axelsson/movie-watchlist"
@@ -96,7 +96,7 @@ const ProjectData: Project[] = [
             tag4: "api.png",
         },
 
-        bodyText: "Developed 'Color Generator' web app with JavaScript, featuring clipboard hex code copying to clipboard and dynamic schemes from TheColorAPI.",
+        bodyText: "Developed 'Color Generator' web app with JavaScript, featuring clipboard hex code and dynamic schemes from TheColorAPI.",
         website: "https://color-generator-scrimba.netlify.app/",
         github: "https://github.com/Andrea-Axelsson/color-generator"
     },
