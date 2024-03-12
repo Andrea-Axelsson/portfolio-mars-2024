@@ -335,58 +335,35 @@ text-align: center;
   
  }
 
- .projects__header-arrow{
+ /* .projects-container{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
- }
-
- .fa-arrow-right{
-  font-size: 30px;
-  color: #fff;
-  animation: slide 2s ease-in-out infinite;
- }
-
- .scroll-arrow{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-right: 10%;
-  padding-top: 40px;
-  gap: 10px;
- }
-
-
- 
- @keyframes slide{
-  0%, 100%{
-    transform: translateX(0)
-  }
-  50%{
-    transform: translateX(30px)
-  }
- }
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 10px 10%;
+ } */
 
  .projects-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  top: 0;
-  margin: 10px 10%;
-  gap: 80px;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 3em;
+    margin: 10px 9%;
+    padding-bottom: 80px;
  }
 
  .project{
-  max-width: 600px;
+/*   max-width: 450px; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  top:0;
+ 
  }
 
  .project__image{
-  width: 600px;
+  width: 100%;
   height: 250px;
   border: 3px solid #fff;
   border-radius: 10px;
@@ -521,22 +498,10 @@ text-align: center;
   @media (max-width: 1080px){
     .projects-container{
       gap: 10px;
-      flex-wrap: wrap;
+      /* flex-wrap: wrap; */
       justify-content: center;
       align-items: center;
      }
-
-     .horizontal-scroll-container{
-      overflow-x: scroll;
-      overflow-y: hidden;
-      touch-action: pan-x;
-      height: auto;
-    }
-
-    .horizontal-scroll-div{
-      height: auto;
-    }
-
   }
 
   @media (max-width: 810px){
@@ -577,16 +542,6 @@ text-align: center;
       text-align: left;
     }
 
-    .horizontal-scroll-container{
-      overflow-x: scroll;
-      overflow-y: hidden;
-      touch-action: pan-x;
-      height: auto;
-    }
-
-    .horizontal-scroll-div{
-      height: auto;
-    }
   }
 
   @media (max-width: 600px) {
@@ -600,6 +555,10 @@ text-align: center;
       "img";
       grid-template-columns: max-content;
       }
+
+      .projects-container{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+     }
 
       .start__sub-header{
         grid-column: -1/1;
@@ -633,22 +592,6 @@ text-align: center;
 
       .button-tag{
         width: 130px;
-      }
-
-      .project, .project__image {
-        max-width: 75vw;
-        height: auto;
-      }
-
-      .horizontal-scroll-container{
-        overflow-x: scroll;
-        overflow-y: hidden;
-        touch-action: pan-x;
-        height: auto;
-      }
-
-      .horizontal-scroll-div{
-        height: auto;
       }
 
       .footer__link img{
