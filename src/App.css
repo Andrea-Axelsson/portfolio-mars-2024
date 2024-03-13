@@ -343,6 +343,7 @@ text-align: center;
   margin: 10px 10%;
  } */
 
+ 
  .projects-container{
     padding: 1em;
     display: grid;
@@ -352,14 +353,13 @@ text-align: center;
     padding-bottom: 80px;
  }
 
- .project{
+ .project {
 /*   max-width: 450px; */
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  top:0;
- 
+  justify-content: flex-start;
+
  }
 
  .project__image{
@@ -535,13 +535,12 @@ text-align: center;
       grid-row: 2;
       width: 100%;
       text-align: center;
-
     }
+
     .about__body-text--black{
       padding-top: 20px;
       text-align: left;
     }
-
   }
 
   @media (max-width: 600px) {
@@ -573,7 +572,6 @@ text-align: center;
         max-width: 600px;
         gap: 10px;
       }
-
 
       .techstack__tag-group .body-text{
         font-family: "JetBrains Mono", monospace;

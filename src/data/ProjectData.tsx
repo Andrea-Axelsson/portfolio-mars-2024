@@ -101,7 +101,7 @@ const ProjectData: Project[] = [
         github: "https://github.com/Andrea-Axelsson/color-generator"
     },
 
-    {
+   /*  {
         id: 7,
         projectTitle: "Avatar Card Game",
         projectImage: "avatar-card-game.png",
@@ -116,7 +116,7 @@ const ProjectData: Project[] = [
         bodyText: "In this project, I got the chance to really geek out in 'Avatar: The Last Airbender' with tailored health and dice for each character, ensuring balanced and diverse gameplay outcomes.",
         website: "https://avatar-card-game.netlify.app/",
         github: "https://github.com/Andrea-Axelsson/avatar-card-game"
-    },
+    }, */
     
 
 ]
