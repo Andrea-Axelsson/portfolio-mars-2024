@@ -73,6 +73,12 @@ const Techstack = () => {
           <p className="body-text body-text--white">Git</p>
         </article>
       </article>
+      <article className="button-tag">
+        <article className="button-tag-info">
+          <img className="button-tag-icon" src="/tailwind-css.svg" alt="tailwind logo"/> 
+          <p className="body-text body-text--white">Tailwind css</p>
+        </article>
+      </article>
 
       </section>
     </section>
