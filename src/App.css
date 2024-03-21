@@ -492,6 +492,9 @@ text-align: center;
 .in-view> *:nth-child(10) {
   animation-delay: 0.9s;
 }
+.in-view> *:nth-child(11) {
+  animation-delay: 0.9s;
+}
 
   /* MEDIA QUERIES */
 
