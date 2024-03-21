@@ -21,7 +21,7 @@ const PortfolioProject: React.FC<Project> = ({projectTitle, projectImage, tags, 
                         <section className="project__skill-tag-group">
                             {tagElements} {/* Renders the tag images */}
                         </section>
-                <p className="body-text body-text--white">
+                <p className="body-text body-text--white project-text">
                 {bodyText}
                 </p>
                 <section className="project__buttons">
