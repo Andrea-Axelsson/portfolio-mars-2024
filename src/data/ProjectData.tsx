@@ -4,8 +4,23 @@ import {Project} from '../components/Interface'
 // Defines an array of projects, each object following the Project interface structure
 const ProjectData: Project[] = [
 
+    
     {
         id: 1,
+        projectTitle: "Audiophile, E-commerce Website",
+        projectImage: "audiophile.png",
+        tags: {
+            tag1: "html.svg",
+            tag2: "tailwind-css.svg",
+            tag3: "typescript.svg",
+            tag4: "react.svg",
+        },
+        bodyText: "I built the Audiophile app with React, Redux, and Tailwind CSS, focusing on responsive design, cart management, and checkout validation.",
+        website: "https://audiophile-andrea.netlify.app/",
+        github: "https://github.com/Andrea-Axelsson/audiophile",
+    },
+    {
+        id: 2,
         projectTitle: "Professional Portfolio",
         projectImage: "portfolio-2024.png",
         tags: {
@@ -20,21 +35,7 @@ const ProjectData: Project[] = [
         github: "https://github.com/Andrea-Axelsson/portfolio-mars-2024",
     },
 
-    {
-        id: 2,
-        projectTitle: "VayCay Generator",
-        projectImage: "VayCay.png",
-        tags: {
-            tag1: "html.svg",
-            tag2: "css.svg",
-            tag3: "javascript.svg",
-            tag4: "ux-ui.png",
-            tag5: "api.png",
-        },
-        bodyText: "This is my very first passion project. I created a travel tool that simplifies finding destinations and activities based on user preferences.",
-        website: "https://vay-cay-generator.netlify.app/",
-        github: "https://github.com/Andrea-Axelsson/vay-cay-generator"
-    },
+    
     {
         id: 3,
         projectTitle: "Creative Portfolio",
@@ -116,6 +117,23 @@ const ProjectData: Project[] = [
         bodyText: "In this project, I got the chance to really geek out in 'Avatar: The Last Airbender' with tailored health and dice for each character, ensuring balanced and diverse gameplay outcomes.",
         website: "https://avatar-card-game.netlify.app/",
         github: "https://github.com/Andrea-Axelsson/avatar-card-game"
+    }, */
+
+
+    /* {
+        id: 3,
+        projectTitle: "VayCay Generator",
+        projectImage: "VayCay.png",
+        tags: {
+            tag1: "html.svg",
+            tag2: "css.svg",
+            tag3: "javascript.svg",
+            tag4: "ux-ui.png",
+            tag5: "api.png",
+        },
+        bodyText: "This is my very first passion project. I created a travel tool that simplifies finding destinations and activities based on user preferences.",
+        website: "https://vay-cay-generator.netlify.app/",
+        github: "https://github.com/Andrea-Axelsson/vay-cay-generator"
     }, */
     
 
